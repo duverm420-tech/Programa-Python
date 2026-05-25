@@ -22,3 +22,12 @@ def contar_titulos(matriz, umbral, año_limite):
         if titulo[2] >= umbral and titulo[1] >= año_limite:
             contador += 1
     return contador
+
+# Solicitar al usuario el umbral de calificación y el año límite
+
+print("===================================")
+print(" Bienvenido a la Videoteca Digital")
+print("===================================")
+
+Calificacion_minima = int(input("Ingrese el umbral de calificación (0-10): "))
+Año_limite = int(input("Ingrese el año límite: "))
