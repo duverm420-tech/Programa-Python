@@ -35,3 +35,7 @@ Año_limite = int(input("Ingrese el año límite: "))
 # Llamar a la función para contar los títulos que cumplen con los criterios
 
 resultado = contar_titulos(videoteca, Calificacion_minima, Año_limite)
+
+# Salida del resultado
+
+print(f"El número de títulos con calificación mayor o igual a {Calificacion_minima} y año mayor o igual a {Año_limite} es: {resultado}")
