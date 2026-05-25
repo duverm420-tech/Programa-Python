@@ -31,3 +31,7 @@ print("===================================")
 
 Calificacion_minima = int(input("Ingrese el umbral de calificación (0-10): "))
 Año_limite = int(input("Ingrese el año límite: "))
+
+# Llamar a la función para contar los títulos que cumplen con los criterios
+
+resultado = contar_titulos(videoteca, Calificacion_minima, Año_limite)
