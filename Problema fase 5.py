@@ -2,12 +2,23 @@
 # Videoteca digital
 
 # Matriz de videoteca digital
+#[titulo, año, calificación, género] 
+
 videoteca = [
     ["Avatar", 2022, 9,"ciencia ficción"],
     ["Avengers endgame", 2019, 10,"acción"],
     ["El señor de los anillos", 2001, 8,"fantasía"],
     ["El código Da Vinci", 2006, 6,"misterio"],
     ["Batman: el caballero de la noche", 2008, 9,"superhéroes"],
-    ["Mario bros", 2023, 7,"Animación"]
+    ["Mario bros", 2023, 7,"Animación"],
     ["Titanic", 1997, 8,"romance"]
 ]
+
+# Funcion para contar titulos de videoteca
+
+def contar_titulos(matriz, umbral, año_limite):
+    contador = 0
+    for titulo in matriz:
+        if titulo[2] >= umbral and titulo[1] >= año_limite:
+            contador += 1
+    return contador
